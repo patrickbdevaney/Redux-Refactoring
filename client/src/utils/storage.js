@@ -9,7 +9,7 @@ categories: [],
 currentCategory: '',
 };
 
-const storage = createStore(reducers, state);
+const store = createStore(reducers, state);
 
 
-export default storage;
+export default store;

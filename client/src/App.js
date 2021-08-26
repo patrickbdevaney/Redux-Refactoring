@@ -19,7 +19,7 @@ import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 
 import {Provider} from 'react-redux'
-import storage from './utils/storage'
+import store from './utils/storage'
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -45,7 +45,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <Provider storage={storage}>
+          <Provider store={store}>
             <Nav />
             <Switch>
               <Route exact path="/" component={Home} />
