@@ -17,6 +17,7 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
+    "mongoose": "^6.0.1",
     "react-redux": "^7.2.4"
   }
 }
